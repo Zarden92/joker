@@ -21,5 +21,7 @@
   "bugs": {
     "url": "https://github.com/Zarden92/joker/issues"
   },
-  "homepage": "https://github.com/Zarden92/joker#readme"
+  "homepage": "https://github.com/Zarden92/joker#readme",
+  "description": "example",
+  "type": "module"
 }
