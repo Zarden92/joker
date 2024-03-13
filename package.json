@@ -1,7 +1,7 @@
 {
   "name": "joker",
   "version": "0.0.1",
-  "description": "Application that tells jokes, CSS only e-commerce application, Personal collection of useful functions",
+  "description": "example",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +22,8 @@
     "url": "https://github.com/Zarden92/joker/issues"
   },
   "homepage": "https://github.com/Zarden92/joker#readme",
-  "description": "example",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "one-liner-joke": "^1.2.2"
+  }
 }
