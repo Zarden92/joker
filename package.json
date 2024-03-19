@@ -1,13 +1,14 @@
 {
   "name": "joker",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "example",
   "main": "src/index.js",
   "scripts": {
     "test": "node src/js/joker.test.js",
     "format": "prettier -w src/**/*.js",
     "lint": "eslint src/**/*.js",
-    "lint-fix": "eslint src/**/*.js --cache --fix"
+    "lint-fix": "eslint src/**/*.js --cache --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -28,10 +29,24 @@
   "type": "module",
   "devDependencies": {
     "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "prettier": "^3.2.5"
   },
   "dependencies": {
     "give-me-a-joke": "^0.3.2",
     "zarden-joker": "^0.0.5"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.html": [
+      "prettier --write"
+    ],
+    "*.scss": [
+      "prettier --write"
+    ]
   }
 }
